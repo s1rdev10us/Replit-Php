@@ -44,7 +44,7 @@
 			$jsonString = file_get_contents('visitorCounter.json');
 			$data = json_decode($jsonString, true);
 			
-			echo '<h1>This site has been visited ';
+			echo '\n<h1>This site has been visited ';
 			echo $data[$window]+1;
 			echo ' times</h1>';
 			$data[$window]=$data[$window]+1;
