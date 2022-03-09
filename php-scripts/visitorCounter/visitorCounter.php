@@ -9,8 +9,8 @@
 	consoleLog($window);
 	$window=$window["path"];
 	consoleLog($window);
-	if($window=='217069ec-c823-4d6d-8387-70c11deb3429.id.repl.co') {
-		$window='replit-php.benjamindanielsimmons.repl.co';
+	if($window.endsWith('repl.co')) {
+		$window='source-replit';
 	}
 	consoleLog($window);
 	$jsonString = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/php-scripts/visitorCounter/visitorCounter.json');
