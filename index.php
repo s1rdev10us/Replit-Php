@@ -12,7 +12,7 @@
 		</style>
 	</head>
 	<body>
-		<?php include '/php-scripts/visitorCounter/visitorCounter.php'
+		<?php include $_SERVER['DOCUMENT_ROOT'].'/php-scripts/visitorCounter/visitorCounter.php'
 		?>
 		
 		<?php echo '<p>Hello World</p>'; ?> 
