@@ -9,6 +9,14 @@
 	consoleLog($window);
 	$window=$window["path"];
 	consoleLog($window);
+	function endsWith($string, $endString)
+	{
+		$len = strlen($endString);
+		if ($len == 0) {
+			return true;
+			}
+		return (substr($string, -$len) === $endString);
+	}
 	if(endsWith($window,'repl.co')) {
 		$window='source-replit';
 	}
