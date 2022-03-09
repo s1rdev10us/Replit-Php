@@ -28,7 +28,7 @@
 				echo $consoleCounter;
 				echo "').remove();console.log('";
 				echo $data;
-				echo "')";
+				echo "')</script>";
 			}
 			$window = parse_url($_SERVER['HTTP_HOST']);
 			consoleLog($window);
