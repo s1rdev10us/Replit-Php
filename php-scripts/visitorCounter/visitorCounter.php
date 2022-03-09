@@ -15,9 +15,7 @@
 	consoleLog($window);
 	$jsonString = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/php-scripts/visitorCounter/visitorCounter.json');
 	$data = json_decode($jsonString, true);
-	echo '\r\n<h1>This site has been visited ';
-	echo $data[$window]+1;
-	echo ' times</h1>';
+	echo "<h1>This site has been visited {$data[$window]+1} times</h1>";
 	$data[$window]=$data[$window]+1;
 	$newJsonString = json_encode($data);
 	file_put_contents($_SERVER['DOCUMENT_ROOT'].'/php-scripts/visitorCounter/visitorCounter.json', $newJsonString);
