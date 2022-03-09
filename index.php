@@ -22,6 +22,7 @@
 			*/
 			$consoleCounter=0;
 			function consoleLog($data = '') {
+				GLOBAL $consoleCounter;
 				$consoleCounter=$consoleCounter+1;
 				echo "<script id='";
 				echo $consoleCounter;
