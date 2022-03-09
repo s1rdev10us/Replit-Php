@@ -19,17 +19,26 @@
 			echo $data;
 			echo ' times</h1>'
 			*/
-			
+			$consoleCounter=0;
+			function consoleLog($data = '') {
+				$consoleCounter=$consoleCounter+1;
+				echo "<script id='";
+				echo $consoleCounter;
+				echo "'>document.getElementById('";
+				echo $consoleCounter;
+				echo "').remove();console.log('";
+				echo $data;
+				echo "')";
+			}
 			$window = parse_url($_SERVER['HTTP_HOST']);
-			echo $window;
-			echo '<br/>';
+			consoleLog($window);
 			$window=$window["path"];
-			echo $window;
-			echo '<br/>';
+			
+			consoleLog($window);
 			if($window=='217069ec-c823-4d6d-8387-70c11deb3429.id.repl.co') {
 				$window='replit-php.benjamindanielsimmons.repl.co';
 			}
-			echo $window;
+			consoleLog($window);
 			$jsonString = file_get_contents('visitorCounter.json');
 			$data = json_decode($jsonString, true);
 			
