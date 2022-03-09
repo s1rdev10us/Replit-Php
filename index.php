@@ -22,8 +22,10 @@
 			
 			$window = parse_url($_SERVER['HTTP_HOST']);
 			echo $window;
+			echo '<br/>';
 			$window=$window["path"];
 			echo $window;
+			echo '<br/>';
 			if($window=='217069ec-c823-4d6d-8387-70c11deb3429.id.repl.co') {
 				$window='replit-php.benjamindanielsimmons.repl.co';
 			}
