@@ -21,9 +21,7 @@
 			*/
 			
 			$window = parse_url($_SERVER['HTTP_HOST']);
-			$window=$window["host"]
-
-
+			$window=$window["host"];
 			$jsonString = file_get_contents('visitorCounter.json');
 			$data = json_decode($jsonString, true);
 			
