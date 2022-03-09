@@ -4,7 +4,6 @@
     <style>
       
       :root {
-        font-family: "Comic Sans MS", "Comic Sans", cursive;
         color:aqua;
         
         background-color:#420;
