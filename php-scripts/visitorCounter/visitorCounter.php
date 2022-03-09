@@ -9,7 +9,7 @@
 	consoleLog($window);
 	$window=$window["path"];
 	consoleLog($window);
-	if($window.endsWith('repl.co')) {
+	if(endsWith($window,'repl.co')) {
 		$window='source-replit';
 	}
 	consoleLog($window);
