@@ -21,10 +21,13 @@
 			*/
 			
 			$window = parse_url($_SERVER['HTTP_HOST']);
+			echo $window;
 			$window=$window["path"];
+			echo $window;
 			if($window=='217069ec-c823-4d6d-8387-70c11deb3429.id.repl.co') {
 				$window='replit-php.benjamindanielsimmons.repl.co';
 			}
+			echo $window;
 			$jsonString = file_get_contents('visitorCounter.json');
 			$data = json_decode($jsonString, true);
 			
