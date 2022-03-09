@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE php>
+<html lang="en">
 	<head>
 		<title>PHP Test</title>
 		<style>
