@@ -3,13 +3,7 @@
 	function consoleLog($data = '') {
 		GLOBAL $consoleCounter;
 		$consoleCounter=$consoleCounter+1;
-		echo "<script id='";
-		echo $consoleCounter;
-		echo "'>document.getElementById('";
-		echo $consoleCounter;
-		echo "').remove();console.log('";
-		echo $data;
-		echo "')</script>";
+		echo "<script id='$consoleCounter'>document.getElementById('$consoleCounter').remove();console.log('$data')</script>";
 	}
 	$window = parse_url($_SERVER['HTTP_HOST']);
 	consoleLog($window);
