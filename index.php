@@ -14,7 +14,6 @@
 				$jsonString = file_get_contents($php_root.'/visitorCounter/visitorCounter.json');
 				$data = json_decode($jsonString, true);
 				$data = $data[$window]+1;
-				echo json_encode($data);
 				echo "This site has had {$data} visitors";
 			?>
 		</title>
