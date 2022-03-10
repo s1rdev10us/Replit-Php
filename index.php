@@ -24,13 +24,12 @@
 			:root {
 				color:aqua;
 		
-				background-color:#420;
+				background-color:#222;
 			}
 		</style>
 	</head>
 	<body>
 		<?php include $_SERVER['DOCUMENT_ROOT'].'/php-scripts/visitorCounter/visitorCounter.php';?>
-		
 		<?php echo '<p>Hello World</p>'; ?> 
 
   </body>
