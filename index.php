@@ -11,7 +11,7 @@
 				if(endsWith($window,'repl.co')) {
 					$window='source-replit';
 				}
-				$jsonString = file_get_contents($php_root.'/visitorCounter.json');
+				$jsonString = file_get_contents($php_root.'/visitorCounter/visitorCounter.json');
 				$data = json_decode($jsonString, true);
 				$data = $data[$window]+1;
 				echo json_encode($data);
