@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<?php 
-			require $_SERVER['DOCUMENT_ROOT'].'php-scripts/include.php';
+			require $_SERVER['DOCUMENT_ROOT'].'/php-scripts/include.php';
 		?>
 		<title>
 			<?php
