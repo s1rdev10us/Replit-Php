@@ -1,18 +1,15 @@
 <!DOCTYPE php>
 <html lang="en">
 	<head>
+		<?php 
+			include $_SERVER['DOCUMENT_ROOT'].'php-scripts/include.php';
+			global $php-root;
+			global $root;
+		?>
 		<title>
 			<?php
 				$window = parse_url($_SERVER['HTTP_HOST']);
 				$window=$window["path"];
-				function endsWith($string, $endString)
-				{
-					$len = strlen($endString);
-					if ($len == 0) {
-						return true;
-						}
-					return (substr($string, -$len) === $endString);
-				}
 				if(endsWith($window,'repl.co')) {
 					$window='source-replit';
 				}
