@@ -3,7 +3,7 @@
 	<head>
 		<?php 
 			include $_SERVER['DOCUMENT_ROOT'].'php-scripts/include.php';
-			global $php-root;
+			global $php_root;
 			global $root;
 		?>
 		<title>
