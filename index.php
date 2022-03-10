@@ -2,9 +2,7 @@
 <html lang="en">
 	<head>
 		<?php 
-			include $_SERVER['DOCUMENT_ROOT'].'php-scripts/include.php';
-			global $php_root;
-			global $root;
+			require $_SERVER['DOCUMENT_ROOT'].'php-scripts/include.php';
 		?>
 		<title>
 			<?php
