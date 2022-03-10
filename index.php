@@ -4,9 +4,7 @@
 		<title>
 			<?php
 				$window = parse_url($_SERVER['HTTP_HOST']);
-				consoleLog($window);
 				$window=$window["path"];
-				consoleLog($window);
 				function endsWith($string, $endString)
 				{
 					$len = strlen($endString);
