@@ -13,7 +13,7 @@
 				}
 				$jsonString = file_get_contents($jsonFile);
 				$data = json_decode($jsonString, true);
-				$data = $data['window']+1;
+				$data = $data[$window]+1;
 				
 				echo "This site has had {$data} visitors";
 
